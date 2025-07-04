@@ -1,0 +1,110 @@
+```adoc
+= Gas and Fees
+:last-update: February 25, 2025
+:icons: font
+:source-highlighter: rouge
+:toc: left
+:toclevels: 2
+
+== What is Gas?
+
+Gas refers to the unit that measures the amount of computational effort required to execute specific operations on the Ethereum network. 
+
+Since each Ethereum transaction requires computational resources, these must be paid for to prevent spam and infinite loops. Payment is made in the form of a *gas fee*, which is paid regardless of whether a transaction succeeds or fails.
+
+[NOTE]
+====
+- Gas fees are paid in ETH, typically quoted in **gwei** (1 gwei = 0.000000001 ETH). 
+- The smallest unit of ETH is **wei** (1 gwei = 1 billion wei).
+====
+
+image::gas-evm-diagram.png[Diagram of Gas in EVM Operations,align="center"]
+
+== How are Gas Fees Calculated?
+
+The total gas fee has two components:
+
+1. *Base Fee*: Set by the protocol (burned after the transaction). 
+2. *Priority Fee (Tip)*: Paid to validators to incentivize transaction inclusion.
+
+=== Formula
+[source,text]
+----
+Total Fee = Gas Used × (Base Fee + Priority Fee)
+----
+
+=== Example
+Jordan sends Taylor 1 ETH:
+- Gas used: 21,000 units
+- Base fee: 10 gwei
+- Priority fee: 2 gwei
+
+Calculation:
+[source,text]
+----
+21,000 × (10 + 2) = 252,000 gwei (0.000252 ETH)
+----
+
+- **Taylor receives**: 1.0000 ETH
+- **Validator tip**: 0.000042 ETH
+- **Base fee burned**: 0.00021 ETH
+
+== Base Fee Mechanics
+
+- Adjusted per block based on demand (target block size = 15M gas, max = 30M gas).
+- Increases by up to *12.5%* if the previous block exceeded the target.
+
+.Block Base Fee Example
+[cols="1,1,1,1"]
+|===
+| Block Number | Included Gas | Fee Increase | Current Base Fee
+| 1 | 15M | 0% | 100 gwei
+| 2 | 30M | 0% | 100 gwei
+| 3 | 30M | 12.5% | 112.5 gwei
+|===
+
+== Priority Fee (Tip)
+
+- Encourages validators to include transactions.
+- Higher tips = faster inclusion.
+
+== Max Fee (`maxFeePerGas`)
+
+- The maximum a user is willing to pay per gas.
+- Refunded amount: `maxFeePerGas - (base fee + tip)`.
+
+== Gas Limit
+
+- Maximum gas a transaction can consume.
+- **Standard ETH transfer**: 21,000 gas.
+- Unused gas is refunded; insufficient gas fails the transaction.
+
+== Why Gas Fees Get High
+
+- High demand → Users bid higher tips.
+- Complex smart contracts consume more gas.
+
+== Reducing Gas Costs
+
+- **Layer 2 solutions** (e.g., Arbitrum, Optimism).
+- **Ethereum scalability upgrades** (e.g., sharding).
+
+== Monitoring Tools
+
+- https://etherscan.io/gastracker[Etherscan Gas Tracker]
+- https://ethgasstation.info[ETH Gas Station]
+- https://www.blocknative.com/gas-estimator[Blocknative Estimator]
+
+== Further Reading
+
+- link:https://ethereum.org/en/developers/docs/gas/[Ethereum Gas Docs]
+- link:https://soliditylang.org/[Solidity Documentation]
+``` 
+
+### Key Features:
+1. **Structured for AsciiDoc**: Uses tables, code blocks, and cross-references.  
+2. **Visual Aids**: Placeholder for a gas/EVM diagram (replace `gas-evm-diagram.png`).  
+3. **Examples**: Clear calculations and block fee tables.  
+4. **External Links**: Integrates Ethereum resources.  
+
+Save this as `chapter1.adoc` and compile with AsciiDoctor (e.g., `asciidoctor chapter1.adoc`). Let me know if you need adjustments!
