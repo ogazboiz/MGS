@@ -1,132 +1,66 @@
 
 
-# 🚀 MGS
+### **Assignment: Gas and Fees + [Your Name]**  
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
-[![Solidity](https://img.shields.io/badge/Solidity-^0.8.0-green.svg)](https://soliditylang.org)  
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/repo-name.svg)](https://github.com/yourusername/repo-name/issues)  
-
-A brief description of your **Web3/Ethereum project**, including its purpose (e.g., DeFi, NFT, DAO) and key features.  
-
----
-
-## 📌 Table of Contents  
-- [Prerequisites](#-prerequisites)  
-- [Setup](#-setup)  
-- [Smart Contract Deployment](#-smart-contract-deployment)  
-- [Gas Optimization Tips](#-gas-optimization-tips)  
-- [GitHub Workflow](#-github-workflow)  
-- [Contributing](#-contributing)  
-- [License](#-license)  
+#### **Objective:**  
+1. Explain your understanding of **Gas and Fees** in Ethereum, including how **EIP-1559** changed the fee structure.  
+2. Define **slippage** in the context of gas calculations.  
+3. Follow the submission steps below.  
 
 ---
 
-## 🛠 Prerequisites  
-Before you begin, ensure you have:  
-- **Node.js** (v16+) and **npm**/**yarn**.  
-- **MetaMask** (or another Ethereum wallet).  
-- **Hardhat**/**Truffle** (for smart contract development).  
-- **Git** installed.  
-- Testnet ETH (e.g., Goerli, Sepolia) for deployment.  
+#### **Tasks:**  
+
+1. **Fork the Repository**  
+   - Fork [ogazboiz/MGS](https://github.com/ogazboiz/MGS) to your GitHub account.  
+
+2. **Create Your File**  
+   - In your forked repo, create a file named:  
+     ```  
+     Gas_and_Fees_YourName.adoc  
+     ```  
+     (Replace `YourName` with your actual name, e.g., `Gas_and_Fees_Alex.adoc`.)  
+
+3. **Write Your Explanation**  
+   - In the file, answer:  
+     - **What is Gas?** Describe its purpose in Ethereum transactions.  
+     - **EIP-1559:** Explain how it reformed gas fees (base fee, priority fee, burning mechanism).  
+     - **Slippage:** Define it and how it relates to gas prices (e.g., in swaps or high-demand blocks).  
+
+4. **Submit a Pull Request (PR)**  
+   - Push your file to your forked repo.  
+   - Open a PR to the original `ogazboiz/MGS` repo with the title:  
+     ```  
+     [Submission] Gas and Fees by YourName  
+     ```  
+   - Include a brief description of your changes.  
 
 ---
 
-## 🚀 Setup  
-### 1. Clone the Repository  
-```bash
-git clone https://github.com/yourusername/repo-name.git
-cd repo-name
-```
+#### **Example Submission Format (Markdown):**  
+```markdown
+# Gas and Fees by Alex  
 
-### 2. Install Dependencies  
-```bash
-npm install  # or yarn install
-```
+## What is Gas?  
+Gas is the unit measuring computational work on Ethereum. It prevents spam by requiring fees for transactions...  
 
-### 3. Configure Environment Variables  
-Create a `.env` file:  
-```env
-PRIVATE_KEY=your_metamask_private_key  
-INFURA_API_KEY=your_infura_key  
-ETHERSCAN_API_KEY=your_etherscan_key  
-```
+## EIP-1559 Changes  
+- Introduced a **base fee** (burned) and **priority fee** (tip to validators).  
+- Dynamic pricing adjusts fees based on block congestion...  
 
----
-
-## 📜 Smart Contract Deployment  
-### Compile Contracts  
-```bash
-npx hardhat compile  # For Hardhat
-# or
-truffle compile      # For Truffle
-```
-
-### Deploy to Testnet (e.g., Sepolia)  
-```bash
-npx hardhat run scripts/deploy.js --network sepolia
-```
-
-### Verify on Etherscan  
-```bash
-npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS "Constructor Arg 1"
+## Slippage  
+Slippage occurs when the gas price changes before a transaction is mined, causing higher costs...  
 ```
 
 ---
 
-## ⛽ Gas Optimization Tips  
-### Best Practices  
-1. **Use `uint256`/`bytes32`** (EVM’s native word size).  
-2. **Minimize storage writes** (SSTORE costs 20k+ gas).  
-3. **Use events** instead of storage for non-critical data.  
-4. **Batch transactions** (e.g., multicall).  
-5. **Avoid loops** in smart contracts where possible.  
+#### **Deadline:**  
+Submit your PR by **[Due Date]**.  
 
-### Tools  
-- [Hardhat Gas Reporter](https://github.com/cgewecke/hardhat-gas-reporter)  
-- [Eth Gas Station](https://ethgasstation.info/) (for mainnet estimates)  
+#### **Grading Criteria:**  
+- Clarity and accuracy of explanations.  
+- Proper file naming and PR formatting.  
+- Originality (no plagiarism).  
 
----
+**Tip:** Use diagrams or code snippets (e.g., gas calculations) to enhance your submission!  
 
-## 🔄 GitHub Workflow  
-### Branching Strategy  
-- `main` → Production-ready (verified contracts).  
-- `develop` → Active development.  
-- `feature/*` → New features (e.g., `feature/nft-minting`).  
-
-### Commit Guidelines  
-Use [Conventional Commits](https://www.conventionalcommits.org/):  
-- `feat:` New feature  
-- `fix:` Bug fix  
-- `refactor:` Code optimization  
-- `chore:` Maintenance (e.g., CI/CD updates)  
-
-### Pull Requests  
-1. Fork the repo and create a branch (`git checkout -b feat/your-feature`).  
-2. Test changes locally:  
-   ```bash
-   npx hardhat test
-   ```  
-3. Push and open a **PR** with a clear description.  
-
----
-
-## 🤝 Contributing  
-1. Open an **Issue** to discuss changes.  
-2. Follow the **Gas optimization** guidelines.  
-3. Ensure tests pass (`npx hardhat test`).  
-
----
-
-## 📜 License  
-MIT © [Your Name](https://github.com/yourusername)  
-
----
-
-### 🔗 Useful Links  
-- [Solidity Docs](https://docs.soliditylang.org/)  
-- [Ethereum Gas Docs](https://ethereum.org/en/developers/docs/gas/)  
-- [Hardhat Tutorial](https://hardhat.org/tutorial/)  
-
----
-
-Let me know if you’d like to add more details (e.g., CI/CD, specific gas tricks)! ⛽🔧
