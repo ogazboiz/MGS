@@ -1,0 +1,24 @@
+GAS AND FEES by Emmanuella Igein
+
+What Is Gas?
+In my last class on Friday, I learned more about gas. So, picture this: A generator cannot run without petrol, a cooker cannot run without gas, a light bulb cannot without electricity or any other renewable energy; likewise an effort to execute a specific operation or transaction on a blockchain network, such as Ethereum. In other words, gas is a unit of measurement of any effort on any blockchain network.
+In the Ethereum network, Gas fees help prevents spam transactions on the network. It also helps to compensate miners to validate transactions and secure the network.
+
+EIP-1559
+EIP-1559 is a game changer, an upgrade to the Ethereum network that reformed gas fees by introducing a base fee and a priority fee. It works like this:
+Base fee: A fee that is automatically calculated by the Ethereum network based on the demand of block space. It adjusts according to network congestion, increasing when the network is busy and decreasing the network is less congested.
+Priority fee: This is also known as ‘tip.’ It’s like giving a waiter at the restaurant a tip for fast delivery of the food. The priority fee goes directly to the miners for compensation in order to process transactions quickly.
+Burning mechanism: This is when the base fee is burned to reduce the overall supply of Ether and potentially increase its scarcity and value over time. For example, a user sends a transaction with base fee of 50 gwei, tipped 5 gwei. That is 50 gwei (base fee) + 5 gwei (priority fee) = 55 gwei. The base fee of 50 gwei is burned to reduce Ether supply.
+The burning mechanism reduces Ether supply, leading to a deflationary effect, prevents miners from manipulating gas prices for their benefit, and it improves network security.
+
+What Is A Slippage?
+Picture this: You go to the store to buy a crate of eggs, expecting to buy it for $5.00 and you found out that a crate of eggs is $8.00, which is a difference of $3.00. So, slippage is that difference in web3. It refers to the difference between the expected price of a trade and the actual price at which the trade is executed.
+How It Relates To Gas prices
+	Gas prices can significantly impact slippage during swaps or high-demand blocks. Here’s how:
+	Swaps:
+1.	Gas Price Volatility: During swaps, gas prices can fluctuate rapidly, leading to delay or slippage if not managed properly.
+2.	Transaction Ordering: Miners may prioritize transactions with higher gas prices, causing slippage for transactions with lower gas prices.
+
+High-Demand Blocks:
+1.	Increased Gas Prices: High-demand blocks can lead to increased gas prices, causing delays or slippage for transactions that aren’t prioritized.
+2.	Network Congestion: High-demand blocks can result in network congestion, leading to delays and potential slippage.
