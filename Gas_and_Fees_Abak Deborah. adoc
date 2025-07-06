@@ -1,0 +1,28 @@
+# Gas and fees by Abak Deborah 
+
+## What is Gas?
+Gas fees are the cost you pay to perform any transaction on a blockchain(like sending crypto or minting an NFT). The gas increases if the transaction is very complex or the network is congested.
+
+## EIP-1559 Changes:
+EIP-1559 is an upgrade to how gas fees work on Ethereum. Before this, gas fees were paid directly to miners, and people had to guess how much to pay. With EIP-1559, there’s now a *base fee* that’s burned (removed from circulation), and a small *tip* goes to miners. This makes fees more predictable and reduces Ethereum supply over time.
+
+*What is Base fee?*
+Base fee is like the fixed delivery charge you must pay. Everyone pays it, and it goes up when there’s traffic (network congestion). This fee burned. It is gone forever.
+
+*What is Priority fee (Tip)?*
+The priority fee is optional, it is the extra money you choose to add as a tip for miners or validators. The higher the tip, the more likely your transaction gets picked faster.
+
+*What is the burning mechanism?*
+Burning Mechanism
+The base fee that everyone pays is burned meaning it’s permanently removed from circulation. It’s sent to a wallet no one can access. This helps reduce ETH supply slowly over time, which can make ETH more valuable.
+
+ ## Slippage:
+
+Slippage happens when the price changes between the time you start a trade and when it actually goes through. In crypto, prices move fast. So if you try to swap a token and it delays, you might get less than expected. Platforms let you set a “slippage tolerance” to control this.
+
+When you swap tokens, the price can change fast because lots of people are trading. If your trade takes a bit longer to confirm maybe because gas fees are low and miners aren’t rushing it the price might move against you. That difference between expected and actual price is slippage.
+Gas fees are like the speed fee you pay to get your transaction picked faster. If you offer higher gas (priority fee), miners prioritize your trade, so it confirms quicker and slippage is less likely.
+So, in high demand blocks:  
+- Gas prices go up because everyone wants their transactions done fast.  
+- If you don’t pay enough gas, your transaction waits longer, increasing the chance of slippage.  
+They’re linked because higher gas fees can reduce slippage risk by speeding up your trade, but both depend on network congestion and timing. 
