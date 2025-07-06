@@ -1,0 +1,120 @@
+Tweet link 
+https://x.com/KryptoSenora/status/1941679127972499823?t=Gl0JNO_jREjQMqoxUdtV0A&s=19
+
+
+##WHY THE EXTRA FEE?##
+
+So, the first time I tried sending crypto onchain, I paused.
+
+I already had the token in my wallet, so what’s this extra fee?
+
+That’s the question that came into my mind and it often crosses the minds of anyone encountering transactions the first time.
+
+So let me help you out.
+
+We’ll be using gas on Ethereum as our example, since the concept of gas fees actually originated from the Ethereum network.
+
+##WHAT IS GAS?##
+
+  Turns out That the term gas is
+the name Ethereum gives to the fee
+required to perform any action on the
+network this includes..
+1. sending ETH
+2. swapping tokens or
+3. interacting with a smart contract
+But it’s not just an extra charge for no reason. It’s tied directly to how much work the Ethereum network has to do to process your request.
+
+Let’s say you’re using Ethereum like you’d use a regular dapp e.g signing something
+
+doing a quick swap etc..
+
+Behind the scenes, Ethereum has to do some heavy lifting to make that happen. And the more complex the action, the more work the network has to do and the more you’ll have to pay.
+
+And it’s paid in ETH.
+
+Quick things to note before we move on:
+
+Gas fees aren’t fixed. They fluctuate based on how congested the network is, So More users = more competition = higher fees.
+
+More complex actions require more gas.
+
+Gas = the total cost of your action on Ethereum. Without it, nothing moves. ( Just in case you forgot)
+
+Now let me be a good sport and drop a tiny cheat code.
+
+If you want to pay less gas on Ethereum.. try doing your transactions when the network is less busy, especially when North Americans are asleep. Late nights, Less demand means cheaper gas.
+
+EIP-1559
+
+Now during the early times of Ethereum, gas fees were a bit of a mess. You had to manually guess how much to pay, and if your guess wasn’t good enough, your transaction could get stuck for hours or fail completely. And if you overpaid? Well… that ETH was gone forever.
+
+Then came EIP-1559 in 2021, an upgrade that completely changed how Ethereum handles gas fees. The difference it made👇🏾
+
+🚦 Base Fee + Priority Fee
+
+Instead of making users guess, Ethereum now sets a base fee for every block. This fee adjusts automatically depending on how busy the network is.
+
+priority fee On on top of that, users can add a priorityfee(also called a tip) to help push their transaction, kind of like tipping a waiter to get your food quicker.
+
+So its more like
+
+This is the standard rate. Want it faster? then Leave a small tip.”
+
+Now it is also important to know that the base fee doesn’t go to validators. It gets burned permanently removed from Ethereum’s total supply.
+
+The more people use the network, the more ETH gets burned. That adds deflationary pressure, meaning ETH can become more scarce over time , which is great for long-term holders.
+_________________________________________________________________________
+
+
+##SLIPPAGE##
+
+With that being said, let’s talk about something that confuses people when they try swapping tokens: slippage.
+
+Slippage is what happens when the price you expected during a swap ends up being different by the time the transaction actually goes through.
+
+E.g you’re swapping ETH for USDC, and your screen shows you’ll get 100 USDC. But by the time your transaction is processed, you end up with 98. That 2 USDC difference? That’s slippage.
+
+It usually happens because:
+
+Prices on-chain move fast (especially in volatile markets)
+
+Your transaction wasn’t confirmed instantly, maybe gas was too low or the network was busy
+
+Another transaction beat yours to it and changed the price before you got there let’s tie this to gas..
+
+Here’s the connection: The slower your transaction, the higher your chances of getting hit with slippage.
+
+If you set a low gas fee and your transaction sits in the mempool for a while, the price of the token you’re swapping might shift before it confirms. So by the time it goes through, you’re getting a slightly worse rate.
+
+But if you want to reduce slippage, you can try:
+
+Increasing your gas tip (priority fee) so your transaction is processed faster
+
+Setting a slippage tolerance — most wallets let you do this to limit how much price movement you’re okay with
+
+ if the price moves too far
+beyond your limit, the whole
+transaction will fail, to protect
+you from getting
+quick example
+
+you’re swapping ETH for USDC,the current rate shows..
+
+1 ETH = 2,000 USDC
+
+Now, you set your slippage tolerance to 1% — that means you’re okay with the price moving a little bit, but not more than 1% by the time your transaction is confirmed.
+
+So if 1% of 2,000 is 20 USDC, it means:
+
+You’re telling the system: “If I end up getting less than 1,980 USDC, cancel the whole thing.”. A great way to stop too much loss in volatile markets
+
+
+##THE EXTRA FEE?##
+
+So remember that moment I talked about "the first time I tried sending crypto onchain and paused because of this mysterious extra fee?
+
+Now it makes sense...
+And if you’ve stayed with me to the end, I hope it all makes sense to you too.
+
+Created by Success Anthony because every Technical topic needs a story teller.
