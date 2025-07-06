@@ -1,0 +1,19 @@
+1. What is Gas? Describe its purpose in Ethereum transactions. 
+Gas is the unit used to measure how much a computational effort it takes to perform an action on (Ethereum) blockchain network. 
+Gas is the fuel that powers Ethereum. It is a critical element in keeping Ethereum secure and processing transactions. Gas helps in many ways:
+
+
+2. EIP-1559: Explain how it reformed gas fees (base fee, priority fee, burning mechanism).
+Before EIP-1559, gas fees were a chaotic guessing game—users would overpay just to get their transactions mined quickly. EIP-1559 brought calm to the storm by introducing a **predictable, dual-fee model**:
+Base fee a fee set by the network that has to be paid for a transaction
+Priority fee: an optional tip to incentivise node operators to include your transaction
+Max Fee:The max amount you're willing to pay (covers both base and tip), but you’ll only be charged what’s needed
+
+3. Slippage: Define it and how it relates to gas prices (e.g., in swaps or high-demand blocks).
+Sippage is the price you are willing to pay as your gas fees. The amount that you are willing to pay as your fee for your Ethereum transaction. Slippage occurs when the gas price changes before a transaction is mined, causing higher costs  
+
+Relation to Gas:
+
+Low gas fees → slower transaction confirmation → higher risk of slippage.
+High gas fees → faster processing → lower slippage risk.
+DEX users often set a "slippage tolerance" (e.g., 1%) to prevent excessive loss. If the price changes beyond this, the trade fails.
