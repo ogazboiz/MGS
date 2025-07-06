@@ -1,0 +1,18 @@
+In Ethereum, gas is the fee paid to perform any transaction or operation on the network — like sending ETH, minting an NFT, or executing a smart contract. 
+It’s like “fuel” that powers the network.
+Every action on Ethereum costs a certain amount of gas.
+Gas is paid in ETH (or gwei, a smaller unit of ETH).
+It goes to miners (or validators in Ethereum 2.0) as a reward for securing and processing the transaction.
+
+Before EIP-1559, users had to guess the right gas fee to get their transaction confirmed quickly — often leading to overpaying or long delays.
+EIP-1559, introduced in August 2021, changed this and includes:
+Base Fee: An automatic, algorithmic fee that adjusts based on network demand. Everyone pays this minimum.
+Priority Fee (Tip): Users can add a small extra fee to get processed faster — this goes to the validator.
+Fee Burning: The base fee is burned (i.e., permanently destroyed), reducing ETH supply over time.
+
+Slippage is the difference between the price you expect and the price you actually get during a swap or trade — especially common during volatile or busy times.
+For example:
+You want to swap 1 ETH for 100 DAI. But by the time your transaction goes through, you only get 98 DAI.
+That 2 DAI difference = slippage.
+If gas prices are low, your transaction might be delayed — and the market may shift before it’s processed (causing slippage).
+In high-demand blocks, others might outbid you in gas fees, pushing your transaction to later blocks — again increasing slippage.
