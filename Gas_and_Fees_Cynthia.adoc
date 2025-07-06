@@ -1,1 +1,11 @@
+# Assignment: Gas and Fees + [Your Name]
+## Objective:
+1. Explain your understanding of Gas and Fees in Ethereum, including how EIP-1559 changed the fee structure.
+2. Define slippage in the context of gas calculations.
+3. Follow the submission steps below.
 
+## Answers:
+
+1. Gas is the unit used to measure how much computational effort it takes to perform an action on the blockchain. Gas is like fuel for doing anything on Ethereum. Fees are the cost in ETH you pay to the network for using its resources like a toll or service charge. 
+2. EIP 1559 changed the fee structure Priority fee which encourages faster transaction inclusion, an optional tip to incentivize validators. 
+3. Slippage is the difference between expected gas cost and the actual gas cost you end up paying when your transaction is confirmed. slippage protects you from large loss due to price movement.
