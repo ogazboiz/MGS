@@ -16,3 +16,6 @@
 HOW IT RELATES TO GAS PRICES
 - Low Gas: If a low gas fee is set, transaction may be delayed, during the delay, market prices can change, causing slippage when the transaction finally goes through.
 - High Gas: Increase your chances of being included in the next block and it reduces the chance of slippage as the transaction is comfired closer to the price you saw when submitting it.
+
+## Thread Link
+https://x.com/Abiodun6155/status/1941831533758726377?t=WroSCgxEzUD29dan0_3Ztw&s=19
