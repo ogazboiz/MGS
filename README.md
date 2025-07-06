@@ -1,6 +1,6 @@
 
 
-### **Assignment: Gas and Fees + [Your Name]**  
+### **Assignment: Gas and Fees + Obiajulu**  
 
 #### **Objective:**  
 1. Explain your understanding of **Gas and Fees** in Ethereum, including how **EIP-1559** changed the fee structure.  
