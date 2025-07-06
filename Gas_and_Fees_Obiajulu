@@ -1,0 +1,44 @@
+1. What is Gas in Ethereum?
+Gas is the unit that measures the computational work required to perform actions on the Ethereum blockchain. I think of gas as the fuel needed to power operations — whether; transferring ETH, interacting with smart contracts, or minting an NFT.
+
+Every operation has a gas cost — and the more complex the task, the more gas is needed.
+So in essence,
+> Gas = Computational effort needed
+> Gas Fee = Gas used × Gas Price
+
+Now, for gas price. This is basically how much you're willing to pay per unit of gas, usually measured in gwei (1 gwei = 0.000000001 ETH). This is similar to saying, “I’m willing to pay ₦XX per litre of fuel.” even though I really don't bother about this, I just wait till asian time and pay the fees. That was then though.
+
+Higher gas prices mean your transaction will be processed faster, as miners/validators prioritize transactions with higher tips, I mean, even I would.
+
+2. What Did EIP-1559 Change?
+
+Before EIP-1559 (introduced in August 2021 via the London Hard Fork), users would manually set their gas price, competing with others in a chaotic bidding war. Good ol days... This often caused overpaying or stuck transactions. This wasn't always funny whenever it happened though.
+
+After-EIP-1559, there weren two Key Changes:
+
+i. Base Fee (Burned)
+
+   A mandatory minimum fee was now automatically calculated by the network based on demand and this fee is then burned (permanently removed from circulation), reducing ETH supply. Pretty deflationary if you ask me.
+
+ii. Priority Fee (Tip)
+
+   With this change, users now only add a small tip to incentivize miners/validators.
+   Think of it as saying: “Here’s something extra if you process my request faster.” or better still, "take this one hold your side"
+
+The final result of this impplementation was that, fees are more predictable, and rthereum now has a deflationary pressure due to burned base fees.
+
+Now check out thsi dope analogy to drive home my point...
+
+Imagine Ethereum is Lagos and making a transaction is like sending a delivery via bolt from mainland to island.
+
+* Gas Limit = How far or how hard the bolt driver will work (e.g., distance, weight of the delivery and time spent in hold up).
+* Gas Price = How much you're willing to pay per litre of fuel, or how much you’ll tip the bolt driver to drive james bond and get there fast.
+* Gas Fee = Total payment for the bolt ride (based on how far + how busy the road is).
+
+Now, before the EIP-1559 (pure chaos):
+
+You had to haggle with the bolt guy yourself in the middle of Ojuelegba traffic. No set pricing. You're literarily dragging with the bolt man. If you offered too little, he'll literarilly drive off, or accept another booking sharp sharp.
+
+But after EIP-1559 (where structure and order comes in):
+
+Now there's a minimum price board set by LASTMA (like the network) that these bolt guys cannot exceed. That price is also burned (used up, not pocketed by bolt drivers). However, you can still give your bolt guy a small change (priority fee) to go faster, if nah you guy oooo, but you no longer overpay or get ignored randomly if there are too many customers and you don't have anyting extra to give the bolt guy.
