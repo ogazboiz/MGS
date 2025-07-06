@@ -1,0 +1,49 @@
+## WHAT IS GAS?
+
+Gas is like airtime or fuel. it’s what powers things on the Ethereum network.  
+Every time someone sends money, swaps tokens, or uses a smart contract, it takes energy.  
+That energy is called gas, and it’s paid in a small amount of ETH.
+
+Without gas, people could overload the system for free. So gas makes sure the network stays fast, fair, and free from spam.
+
+Example
+Sending ETH to a friend = costs a little gas
+Interacting with a smart contract = costs more gas
+
+## EIP-1559 CHANGES
+
+Before, users had to guess the right fee to get their transaction through and that caused a lot of stress and delays.
+EIP-1559 fixed that by creating a clearer and better system:
+
+- Base Fee: This is the standard price everyone pays. It goes up or down based on how busy the network is.  
+- Priority Fee (Tip): You can add a little extra i.e  a tip to get your transaction picked faster by validators.  
+- Burning ETH: The base fee isn’t kept it’s burned, meaning it's destroyed forever. This helps reduce ETH supply.
+
+So now, gas fees are clearer, more stable, and less frustrating.
+
+Formula:
+Total Fee = Gas Limit x (Base Fee + Priority Fee)
+
+Example:
+If Gas Limit = 21,000
+Base Fee = 20 gwei
+Priority Fee = 2 gwei
+
+Then: Total Fee =21,000 x (20+2) =426,000 gwei = 0.000462 ETH
+
+
+## SLIPPAGE
+
+Slippage happens when you think a transaction will cost one amount, but it ends up costing more or less by the time it goes through.
+
+This usually happens when:
+- The network is very busy
+- Lots of people are trying to swap tokens at once
+
+If you set your gas fee too low, your transaction might be delayed or fail.  
+That small change or gap in what you expected to pay versus what actually happened is called slippage.
+
+Example:
+If you set gas the gas fee at 30 gwei, but by the time the transaction get picked, the network now requires 40 gwei.
+The transaction will fail unless the gass fee is adjusted to the required amount. That difference between 30 gwei and 40 gwei, which is 10 gwei, is the slippage.
+
