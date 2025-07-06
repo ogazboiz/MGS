@@ -1,0 +1,21 @@
+## Gas and Fee by Azeez Abiodun Sodiq
+
+## What is Gas?
+- Gas is the unit to measure how much a computational effort it take to perform and action on a network
+- Purpose: It acts as a fuel to power transactions and prevent spamming, ensuring the network's security and efficency
+
+## EIP-1559
+- This changed how transaction fees(gas fee) work on Ethereum, Users can bid gas prices to have their transactions included in blocks.
+- It automatically adjusted based on network demand with a mandatory minimum fee all users must pay to have their transaction included in a block.
+- Priority fee: Is like an oprtional tip that users can include to incentivize miners/validators to prioritize their transaction and it encourages fas inclusion during high network activity
+- Max Fee: User can set a maximum amount they're willing to pay per unit of gas 
+
+## Define Slippage
+- this is the difference between the expected price of a trade and the price at which the trade is actually executed (like a change in token price) 
+
+HOW IT RELATES TO GAS PRICES
+- Low Gas: If a low gas fee is set, transaction may be delayed, during the delay, market prices can change, causing slippage when the transaction finally goes through.
+- High Gas: Increase your chances of being included in the next block and it reduces the chance of slippage as the transaction is comfired closer to the price you saw when submitting it.
+
+## Thread Link
+https://x.com/Abiodun6155/status/1941831533758726377?t=WroSCgxEzUD29dan0_3Ztw&s=19
