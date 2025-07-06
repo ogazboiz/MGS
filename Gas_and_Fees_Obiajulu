@@ -10,6 +10,7 @@ Now, for gas price. This is basically how much you're willing to pay per unit of
 
 Higher gas prices mean your transaction will be processed faster, as miners/validators prioritize transactions with higher tips, I mean, even I would.
 
+--------------
 2. What Did EIP-1559 Change?
 
 Before EIP-1559 (introduced in August 2021 via the London Hard Fork), users would manually set their gas price, competing with others in a chaotic bidding war. Good ol days... This often caused overpaying or stuck transactions. This wasn't always funny whenever it happened though.
@@ -42,3 +43,68 @@ You had to haggle with the bolt guy yourself in the middle of Ojuelegba traffic.
 But after EIP-1559 (where structure and order comes in):
 
 Now there's a minimum price board set by LASTMA (like the network) that these bolt guys cannot exceed. That price is also burned (used up, not pocketed by bolt drivers). However, you can still give your bolt guy a small change (priority fee) to go faster, if nah you guy oooo, but you no longer overpay or get ignored randomly if there are too many customers and you don't have anyting extra to give the bolt guy.
+
+
+-----------------
+3. What is Slippage in DeFi?
+
+Slippage is the difference between the expected price of a trade and the actual price you get when the trade executes. Usually a pain moat times.
+
+Now, this happens due to one of these three reasons:
+
+* Low liquidity
+* High volatility
+* Delayed transaction confirmation (especially in congested blocks)
+
+In DeFi, when you're swapping tokens — e.g., ETH for USDC on Uniswap — the price you see when you click “Swap”* might not be what you get when the transaction actually gets mined. More often than not, its lower. Like why can't slippage just make me something extra.
+
+Anyways, the reason is because the market moved (due to other trades, price swings, or delays in processing your transaction).
+
+How Slippage Relates to Gas Prices
+
+i. High Gas Fees = Slower Confirmations (if your gas tip is low)
+
+If for instance, you were trying to save money and set a low priority fee, your transaction might sit in the mempool longer. And during that time, other traders (esp. bots and whales) will definitely front-run you, causing price changes before your swap goes through → leading to higher slippage.
+
+ii. Low Gas = Increased Vulnerability to MEV Bots
+
+ * Sandwich attacks (where bots front-run and back-run your swap) can cause forced slippage. I mean you don't plan for a bunch of flash bots sneaking immediately past your transactions to buy and sell instantly, forcing you to buy higher or sell lower.
+ * These bots thrive in congested blocks where traders underprice their gas.
+
+iii. High Slippage Tolerance = Dangerous for Retail Users;
+If you set a slippage tolerance of 10% trying to “just get it over with, I mean who doesn't”, you’re pretty much telling the smart contract: “As long as I get something back, even if it’s a bad deal, go ahead.”
+
+So in high-demand blocks (e.g., during an airdrop claim, meme coin launch, degen trading or narrative pumps), gas and slippage go hand-in-hand, either you pay higher gas to get priority (lowering slippage risk) big boy style, or you cheap out on gas and risk price movement ruining your trade, brokie style.
+
+Now here's another dope analogy for this;
+ 
+Imagine you enter Balogun Market, to change like 2 meter to USD. The Aboki man now tells you it's ₦1,510/1$ right now.
+
+But, you now decide to go to the bank to withdraw the money and then add that of your friend that always does things at the last minute and end up delaying for another 4 hours. By the time you return the aboki man now tells you that the rate has added #10 and is now #1,520/1$
+> That ₦10 difference per dollar = Slippage. You got a worse rate because you didn’t act fast enough.
+
+Now, let’s say there are **100 people also trying to buy USD** at the same time (like a token launch on Ethereum), and everyone is shouting prices.
+
+* If you refuse to “settle” the guy (aka give small tip), others will jump the queue.
+* By the time your turn comes, the rate might have gone up even more → **worse slippage**.
+
+The "settle" you give = **Gas Tip (Priority Fee)**
+The changing rate due to market demand = **Slippage**
+The delay caused by stingy settlement = **Congestion + MEV danger**
+
+---
+
+### 🧠 TL;DR for Web3 Natives
+
+* **Slippage** = The price drift between when you initiate a trade and when it gets mined.
+* It's worsened by:
+
+  * Low liquidity
+  * High market activity
+  * Poorly priced gas (especially during hype moments)
+* Setting **better gas fees** (via EIP-1559’s priority tip) helps reduce slippage risk in volatile moments.
+* In *naija terms*, slippage is like getting a worse rate at the **Bureau de Change** because you were slow or stingy with your *settlement*.
+
+---
+
+Let me know if you want this rewritten as a **Twitter thread**, **blog post**, or converted into a **carousel for Instagram**. I can also build this into a Web3 educational series tailored for African audiences if you’re planning a project or content rollout.
