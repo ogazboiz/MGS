@@ -1,0 +1,8 @@
+##Gas fees
+Gas fees are simply the the cost of making transactions which are paid to the validators for executing smart contracts and processing transactions.  
+##EIP -1599 ( Ethereum Improved Proposal -1599)
+It changed how ETH fees work. Base fee Changes based on how busy the network is.
+-The base fee is removed/burned from the supply which can make eth more valuable.
+-You can also tip validators so transactions can get prioritized and processed faster
+##Slippage
+Slippage is the difference between expected price of a trade and the actual price that was used to execute it. Slippage can be positive  or negative. But it can be controlled by setting Slippage tolerance in Decentralized exchanges.
