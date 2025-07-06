@@ -1,0 +1,49 @@
+Gas and Fees by Doyinsola Joseph
+
+What is Gas?
+
+Gas is the fuel that powers the Ethereum network. It represents the computational effort required to execute transactions or smart contracts. Every action on Ethereum for example sending ETH, minting an NFT, or swapping tokens—costs gas.
+
+Why gas? It prevents spamming the network and ensures users pay fairly for the resources they consume. Think of it like paying for airtime or mobile data: the more complex or heavy your action is, the more you need to pay.
+
+Gas is paid in **gwei**, which is a tiny fraction of ETH (1 ETH = 1,000,000,000 gwei).
+
+EIP-1559 and the New Gas Fee Structure
+
+Before EIP-1559, gas fees were a chaotic guessing game—users would overpay just to get their transactions mined quickly. EIP-1559 brought calm to the storm by introducing a **predictable, dual-fee model**:
+
+* **Base Fee:** A fixed minimum fee per transaction that adjusts automatically based on network congestion. This fee is *burned* (sent to a dead address), making ETH deflationary over time.
+* **Priority Fee (Tip):** An optional extra fee users add to incentivize validators to process their transaction faster.
+* **Max Fee:** The max amount you're willing to pay (covers both base and tip), but you’ll only be charged what’s needed.
+
+This model made fees more transparent, reduced overbidding, and introduced ETH burning—which affects supply and value.
+
+Slippage and Its Connection to Gas
+
+**Slippage** refers to the difference between the expected and actual transaction price due to rapid changes in network conditions or token prices. It’s common during token swaps or in highly volatile moments.
+
+Here’s how it ties into gas:
+
+* If your transaction is stuck behind others with higher gas prices, you might miss your ideal execution price—causing slippage.
+* In DEXs (Decentralized Exchanges), slippage tolerance is often set to allow small price changes. If gas delays your transaction too long, prices can move beyond your set tolerance, causing the swap to fail or cost more.
+
+ Quick Example:
+
+Let’s say you want to swap ETH for USDC. You set:
+
+* Gas limit = 21000
+* Max fee = 50 gwei
+* Base fee = 30 gwei
+* Priority fee = 2 gwei
+
+Actual fee used:
+30 (base) + 2 (tip) = 32 gwei
+Unused max: 18 gwei refunded
+
+If gas prices spike to 40 gwei mid-swap and your max is still 50, you’re good. But if it goes to 60 and you don’t increase it, the transaction could fail or be delayed—and boom, **slippage** hits.
+
+Summmary
+
+* Gas = Ethereum's transaction fuel
+* EIP-1559 = More stable, fair, and deflationary fees
+* Slippage = When price/gas changes before execution = potential L
