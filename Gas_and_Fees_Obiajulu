@@ -83,28 +83,9 @@ Imagine you enter Balogun Market, to change like 2 meter to USD. The Aboki man n
 But, you now decide to go to the bank to withdraw the money and then add that of your friend that always does things at the last minute and end up delaying for another 4 hours. By the time you return the aboki man now tells you that the rate has added #10 and is now #1,520/1$
 > That ₦10 difference per dollar = Slippage. You got a worse rate because you didn’t act fast enough.
 
-Now, let’s say there are **100 people also trying to buy USD** at the same time (like a token launch on Ethereum), and everyone is shouting prices.
+Now, let’s say like 50 people also trying to buy USD at that same time (like a token launch on Ethereum), and everyone is shouting their price evis just everywhere just good for the aboki man, if you refuse to “settle” the guy you know, arrange small matter for him so he'll run yours sharp sharp, others will jump the queue asap.
+By the time it reaches your turn, the rate might have gone up even more → worse slippage, or dollar would have finished.
 
-* If you refuse to “settle” the guy (aka give small tip), others will jump the queue.
-* By the time your turn comes, the rate might have gone up even more → **worse slippage**.
-
-The "settle" you give = **Gas Tip (Priority Fee)**
-The changing rate due to market demand = **Slippage**
-The delay caused by stingy settlement = **Congestion + MEV danger**
-
----
-
-### 🧠 TL;DR for Web3 Natives
-
-* **Slippage** = The price drift between when you initiate a trade and when it gets mined.
-* It's worsened by:
-
-  * Low liquidity
-  * High market activity
-  * Poorly priced gas (especially during hype moments)
-* Setting **better gas fees** (via EIP-1559’s priority tip) helps reduce slippage risk in volatile moments.
-* In *naija terms*, slippage is like getting a worse rate at the **Bureau de Change** because you were slow or stingy with your *settlement*.
-
----
-
-Let me know if you want this rewritten as a **Twitter thread**, **blog post**, or converted into a **carousel for Instagram**. I can also build this into a Web3 educational series tailored for African audiences if you’re planning a project or content rollout.
+The "settlement" you give = Gas Tip (Priority Fee) remember from question 1
+The changing rate due to market demand = Slippage
+The delay caused by stingy settlement = Congestion + MEV danger
