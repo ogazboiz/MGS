@@ -1,5 +1,7 @@
 # Assignment: Gas and Fees
+
 ## Objective:
+
 1. Explain your understanding of Gas and Fees in Ethereum, including how EIP-1559 changed the fee structure.
 2. Define slippage in the context of gas calculations.
 3. Follow the submission steps below.
