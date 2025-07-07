@@ -1,0 +1,21 @@
+# Assignment on Gas and Fees by Aisha
+
+## What is Gas?
+
+- Gas is the fees/charges collected on the Ethereum before any transaction can occur. This is to potentially ensure that the types of computations done on the Ethereum are fact checked and are not clustered without essence on the blockchain.
+
+## EIP-1559 & Reformations 
+
+- The EIP-1559 is a system that was introduced to curb the way users defined the values for the cost of transactions on the Ethereum blockchain and reduce the level of exorbitance as regards busy networks, high transaction demands and huge gas fees for prioritising computations. 
+
+- This process was accomplished with the following three major components:
+
+ - Base Fee: the generalised fees that every user pays for transactions they carry out. This is a fixed cost.
+ - Priority Fee: an optional tip for the miners or validators of the Ethereum blockchain. This is set by the user to allow their transactions be favoured or executed faster.
+ - Burning Mechanism: to ensure that Ether does not devalue as multiple transactions are carried out or become exorbitant as the network gets busy, the base fees are burned.
+
+## Slippage
+
+- Much like normal investment, the difference in prices that shows before buying and when a transaction is about to be completed, in Blockchain, this is called slippage. It exists as the cost/price difference between the first stated price and the eventual calculate price. 
+
+*Therefore, the gas fees, the amount to be paid on the Blockchain for the transaction to occur, can change in the user's favour or against it, depending on how choked the network is (high demand blocks) that influences the ease of getting something in swapping items or tokens or the cost.*
