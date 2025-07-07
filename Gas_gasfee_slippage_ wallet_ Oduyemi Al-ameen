@@ -1,2 +1,12 @@
 https://x.com/lameen2764/status/1942222487455948838?t=ghc5H307S1uLHlyzkeUntg&s=19
 
+Ether (ETH) is Ethereum's native cryptocurrency, acting as the fundamental asset for transactions and operations on the Ethereum blockchain.
+Ethereum Gas and Fees:
+ * Gas: A unit measuring the computational effort for an operation on Ethereum. More complex operations consume more gas.
+ * Fee: The cost of a transaction, calculated as Gas Units Consumed × Gas Price. Paid in ETH.
+EIP-1559 Fee Structure:
+ * Base Fee: A dynamic, protocol-set fee that is burned (removed from circulation), adjusted based on network congestion.
+ * Priority Fee (Tip): An optional payment to validators for faster transaction inclusion.
+ * Users specify a maxFeePerGas and maxPriorityFeePerGas. The protocol charges the sum of the actual base fee and priority fee, refunding any excess from maxFeePerGas. This system improves fee predictability.
+Slippage:
+ * The difference between an expected transaction outcome (e.g., price, gas cost) and its actual outcome upon execute  Users set "slippage tolerance" to manage this risk, preventing transactions if costs exceed a set threshold.
