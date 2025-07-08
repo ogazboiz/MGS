@@ -1,0 +1,52 @@
+## Ethereum Gas, EIP-1559, and Slippage – Explained
+
+1. What is Gas?
+Gas is the unit that measures the computational effort required to perform operations on the Ethereum blockchain. Every transaction (e.g., sending ETH, swapping tokens, minting NFTs, executing a smart contract) consumes gas.
+
+Purpose of Gas:
+Regulates computational cost: More complex transactions cost more gas.
+
+Prevents spam: Users pay for computation, which deters malicious activity.
+
+Incentivizes validators: Validators (or block proposers) earn gas fees as a reward.
+
+Example Gas Cost:
+// A simple ETH transfer might cost around 21,000 gas
+Gas Used × Gas Price = Total Fee
+21,000 × 30 gwei = 630,000 gwei = 0.00063 ETH
+
+
+2. EIP-1559: A Gas Fee Revolution
+EIP-1559 introduced a dual-fee model in Ethereum’s London upgrade (2021), improving fee predictability and user experience.
+
+Components:
+Base Fee: Automatically set by the network and adjusted per block based on demand. This part is burned (destroyed), reducing ETH supply.
+
+Priority Fee (Tip): Optional extra fee users pay to incentivize validators to prioritize their transactions.
+
+Max Fee: The highest total fee a user is willing to pay (includes base + priority).
+
+Fee Structure Diagram:
+Total Fee Paid = Base Fee (burned) + Priority Fee (goes to validator)
+
+Burn Mechanism:
+EIP-1559 burns the base fee, introducing a deflationary pressure on ETH supply.
+
+User pays: 30 gwei base + 2 gwei tip
+- 30 gwei gets burned
+- 2 gwei goes to validator
+
+
+3. Slippage and Gas Prices
+Slippage is the difference between the expected price of a trade and the price at which it’s actually executed.
+
+How It Happens:
+In high-demand blocks, network congestion increases.
+
+If your transaction is delayed due to low gas, the price of tokens may shift before execution.
+
+In DEX swaps, this can lead to users receiving fewer tokens than expected.
+
+Example Scenario:
+You're swapping 1 ETH for DAI at an expected rate of 1 ETH = 2,000 DAI.
+Due to low gas price or sudden demand, your transaction is mined later, and the price changes to 1 ETH = 1,950 DAI — causing slippage.
