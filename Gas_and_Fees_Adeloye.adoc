@@ -1,0 +1,120 @@
+Twitter thread: https://x.com/MrAdeloye/status/1942220771692355898?t=0ybVqwNUoTi-0rUnjVyfAw&s=19
+
+### CONCEPT OF GAS
+Gas, however minute it might sound to you, isn’t really. It is important to know and understand that the gas fees we know today have some underlying properties attached to them.
+No knowledge about gas? This is for you.
+Have a little or want to know more? This is also for you.
+
+## Table of contents 
+
+1. Introduction to gas.
+2. What is Gas
+3. What are gas fees?
+4. Basic Concepts of Gas
+5. Gas Pre- ERP-1559 model
+6. EIP-1559 model
+7. Why do Gas fluctuate?
+8. Slippage
+
+## Introduction to Gas
+
+There’s a common misunderstanding about "gas" itself being a fee. But alas, it’s not. Let me borrow from the characteristics of money: "Unit of Measurement." Apart from money being a medium of exchange, it is also a unit of measurement. It’s a basis to quantify the value of goods and services. It helps assign worth to commodities in a fair and acceptable manner.
+
+Let’s say you bought a book and your friend asks you the price you got it for. Your response will be something-Naira (using Nigerian currency). At that moment, Naira is acting as a basis for assigning value to your book or any other item. Regardless of how much your book is, it will surely be in Naira. Now let’s move to Gas.
+
+## What is Gas?
+Gas is the unit of measure for how much computational work is required to process transactions and smart contracts. So, before gas becomes a fee, it is first a unit of measurement—like money. Instead of measuring or assigning value to books or other commodities, it now measures efforts or work required to process a transaction on the Blockchain.
+
+Whenever you try to send a token from one wallet to another, you have interacted with a smart contract. In simple terms, you have initiated a transaction, but for that transaction to be completed, you need another person or entity (a validator) to approve or complete the transaction. Now, the effort spent by that person to help you complete your transaction is what gas is measuring and assigning value to.
+The process of checking your wallet to see if you have enough tokens to transfer, then confirming the transfer to be completed, is what is referred to as computational work/effort—and value is assigned to it using gas.
+
+It’s like you asking the person, "How can I pay you for this work or transaction you helped me complete?" and they respond, "Don’t give me money, pay me gas."
+
+> N.B. – A validator isn’t directly a person but a system set up by a person.
+
+Gas, in this sense, is synonymous with money. Money is used to assign value to goods and services; gas is used to assign value to computational efforts. Simple.
+
+> N.B. – Gas is expressed in quantities. Money itself is not. E.g., 1 gas, but not 1 money.
+
+
+Having understood the meaning of gas, now let’s move to Gas Fees.
+
+## What are Gas Fees?
+Using existing knowledge from the meaning of gas, gas fees are payments made to validators to compensate for computational efforts used to process a transaction.
+
+Now, just as most countries in the world have a currency (money) peculiar to them, likewise, each blockchain or network has a native token peculiar to it. Gas fees are paid in the network's native token.
+
+Countries like the United States and Ecuador spend USD; in the same way, some blockchains or networks use the same token to pay gas fees. But the content of this article is focused mainly on the Ethereum Blockchain.
+
+## Basic Concepts of Gas
+1. Gas Limit
+2. Max Fee
+3. Base Fee
+4. Priority Fee
+5. Units of Gas Used
+
+1. Gas Limit
+As I said earlier, "Gas is expressed in quantities"—like 1, 2, 3, etc.
+Gas limit is the maximum number of units of gas a user is willing to pay in order to carry out a transaction operation. It’s basically saying, “This is the quantity of gas I, as a user, am willing to spend for a validator to process my transaction.”
+
+2. Max Fee
+This is the total amount you are willing to pay per unit of gas for the completion of your transaction. It is measured in Gwei.
+
+Formula = [(Base Fee + Priority Fee) * Units of Gas Used]
+(All terms are explained below.)
+
+> N.B- Gwei is a unit of Ether [the native token of the Ethereum blockchain], the smallest denomination.
+Gwei is to Ether what Kobo is to Naira.
+Gwei stands for Gigawei (a billion wei).
+100 Kobo = ₦1
+1,000,000,000 Wei = 1 $ETH
+
+3. Base Fee
+This is the minimum mandatory fee that must be paid to process a transaction. Measured in Gwei. It gets burned.
+
+4. Priority Fee
+This is simply a tip. It is optional but important. It is paid to the validator to motivate them. The higher it is, the faster your transaction is.
+
+5. Units of Gas Used
+The number of gas units used by the user—the quantity: 200, 2300, 3000, 1, etc.
+
+## Gas Before the EIP-1559 Model
+Things don’t just spring out from nowhere—there’s always a source or a reason behind them.
+
+Originally, in the past, determining gas fees on the Ethereum network was a real tug of war (not literally); maybe a digital version. But this tug of war wasn’t fought or won by brute strength—it required something else. I’d basically call it bidding.
+
+Before the EIP-1559 model, Ethereum used a first-price auction system for determining transaction fees. Users had to bid against each other, offering higher gas fees to incentivize validators and miners to include their transactions. The highest bidder would have their transaction prioritized.
+
+This wasn’t entirely fair. A better model was needed. That’s where EIP-1559 comes in.
+
+Miners are the ones who create new blocks; a validator validates your transaction before it can be added to a block.
+> N.B. – Validating your transaction isn’t entirely based on the gas fee paid, but also on the legitimacy of your transaction.
+
+## What Is the EIP-1559 Model?
+Ethereum Improvement Proposal (EIP) 1559 was introduced in August 2021. From the name, it is an improvement model meant to replace the old, chaotic method of fee determination.
+
+What the EIP-1559 model introduces:
+1. Base Fee
+2. Priority Fee
+3. Max Fee
+(All already explained above.)
+
+## Why Do Gas Fees Fluctuate?
+There could be hundreds of reasons why gas fees fluctuate—but it all boils down to volume.
+
+The cost of gas is influenced by demand and supply.
+How many people are demanding for their transactions to be validated?
+The higher the demand, the higher the price.
+The more transactions, the higher the price becomes—and vice versa, ceteris paribus.
+
+
+# Hike in Gas Fee Prices
+There are a limited number of transactions that can be validated and added to the blockchain per second.
+The moment traffic becomes high—i.e., more people are trying to get their transactions processed—the best way to filter out the most important is by increasing the gas fee. With increased gas fees, validators know which transactions to prioritize.
+
+
+## Slippage
+
+Slippage, in terms of gas fees, refers to the percentage difference between the expected cost of a transaction and the actual gas fee paid.
+
+Slippage can be positive or negative, and it's primarily caused by market volatility.
